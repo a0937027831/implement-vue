@@ -9,10 +9,11 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
 import Editor from '@/components/editor/Editor.vue';
 import Buffer from '@/components/buffer/Buffer.vue';
 import { StringBufferClient } from '@/components/buffer/stringBufferClient';
 import { Description } from './Description';
 
-const client = new StringBufferClient();
+const client = ref(new StringBufferClient());
 </script>
